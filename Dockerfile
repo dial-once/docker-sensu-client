@@ -1,4 +1,4 @@
-FROM dialonce/sensu
+FROM dialonce/sensu:1.0.1
 
 MAINTAINER Julien Kernec'h <docker@dial-once.com>
 
