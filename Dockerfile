@@ -1,4 +1,4 @@
-FROM dialonce/sensu
+FROM dialonce/sensu:1.0.1
 
 MAINTAINER Julien Kernec'h <docker@dial-once.com>
 
@@ -10,7 +10,7 @@ RUN gem install \
   sensu-plugins-rabbitmq \
   sensu-plugins-redis \
   # Install sensu-plugins-docker from github
-  && apk add --no-cache git perl \
+  && apk add --no-cache git perl bash \
   && gem install specific_install \
   && gem specific_install https://github.com/sensu-plugins/sensu-plugins-docker.git \
   && gem uninstall specific_install \
