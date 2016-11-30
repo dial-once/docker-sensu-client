@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "memory-percentage": {
+      "type": "metric",
+      "command":"metrics-memory-percent.rb",
+      "interval":10,
+      "standalone": true
+    },
+    "cpu-percentage": {
+      "type": "metric",
+      "command":"metrics-cpu-pcnt-usage.rb",
+      "interval":10,
+      "standalone": true
+    },
+    "disk-capacity": {
+      "type": "metric",
+      "command":"metrics-disk-capacity.rb",
+      "interval":10,
+      "standalone": true
+    }
+  }
+}
